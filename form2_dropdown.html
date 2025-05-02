@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Food Order Form</title>
+</head>
+<body>
+
+    <!-- The Section tag (<section></section>) defines the section of documents such as chapters, headers, footers, or any other sections. -->
+    <!-- The <form> element can contain one or more of the following form elements: <input>, <textarea>, <button>, <select>, <option>, <optgroup>, <fieldset>, 
+    <label>, <output> -->   
+    <section>
+
+    <!-- Create a main header with h1 tag -->
+    <h1>Please Fill Out the Form Below:</h1>
+        
+        <!-- The <form> tag is used to create an HTML form for user input. -->
+        <form action="/submit_order" method="post">
+
+            <p>
+                <!-- create a label element (text) -->
+                <label for="firstName">First Name:</label>
+
+                <!-- Use input element to set the Min (minlength) and Max (maxlength) lengths on the text box for error checking the control -->
+                <input type="text" id="firstName" name="firstName" minlength="2" maxlength="30" required>
+
+            <br>
+            <br>
+
+                <!-- create a label element (text) -->
+                <label for="lastName">Last Name:</label>
+                
+                <!-- Use inup element to set the Min (minlength) and Max (maxlength) lengths on the text box for error checking the control -->
+                <input type="text" id="lastName" name="lastName" minlength="2" maxlength="30" required>
+
+            </p>
+    
+        <br>
+    
+    
+    <section>
+        <p>
+            <!-- create a label element (text) -->
+            <label for="food">Which food would you like to eat?</label>
+
+            <!-- Use select element to set dropdown options  -->
+            <select id="food" name="food" required>
+
+                <!-- options elements are a list of options on the dropdown -->
+                <option value="">--Select--</option>
+                <option value="chicken">Chicken</option>
+                <option value="beef">Beef</option>
+                <option value="pork">Pork</option>
+                <option value="seafood">Seafood</option>
+                <option value="tofu">Tofu</option>
+                <option value="vegetables">Vegetables</option>
+            </select>
+        </p>
+
+        <br>
+    
+        <p>
+            <!-- create a label element (text) -->
+            <label for="allergies">Do you have any allergies?:</label><br>
+
+            <!-- create texarea for filling out the information, using textarea element -->
+            <textarea id="allergies" name="allergies" rows="4" cols="50" placeholder="Please enter your allergies here..."></textarea>
+        </p>
+
+        <br>
+        <p>
+            <!-- create a submit button with bottom tag (<botton></bottom>) -->
+            <button type="submit">Send</button>
+
+        </p>
+    </section>  
+        </form>
+    </section>
+</body>
+</html>
