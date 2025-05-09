@@ -1,0 +1,46 @@
+
+/*Select and style all elements with class="crimson"*/
+.crimson {
+    color: crimson;
+}
+
+
+/*Select and style all elements with class="greenish"*/
+.greenish {
+    color: rgb(22, 117, 22);
+}
+
+
+/*Select and style all elements with class="yellowish"*/
+.yellowish {
+    color: rgb(162, 162, 16);
+}
+
+/*Select and style all elements with class="gobigred"*/
+.gobigred {
+    color: #d00000;
+}
+
+
+/*Select and style all elements with class="longhorns"*/
+.longhorns {
+    color: #bf5700;
+}
+
+
+/*Select and style all elements with id="botton1"*/
+#botton1 {
+    
+    color: white;
+    background-color: green;    
+    
+}
+
+
+/*Select and style all elements with id="botton2"*/
+#botton2 {
+    
+    color: white;
+    background-color: red;    
+    
+}
