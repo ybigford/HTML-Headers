@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Grade Assigner</title>
+    <script>
+
+    //define function assignedScore with parameter score to pass in input value of user's score
+    function assignedScore(score) {
+    
+    //if user's score is greater than or equal to 90, user's grade is an A.
+    if (score >= 90) {
+        
+        return "WOW! You scored an A!";
+
+        //if user's score is greater than or equal to 80 (and not greater than or equal to 90), user's grade is a B.
+      } else if (score >= 80) {
+        return "Nice! You scored a B!";
+
+        //if user's score is greater than or equal to 70 (and not greater than or equal to 80), user's grade is a C.
+      } else if (score >= 70) {
+        return "Good job! You scored a C!";
+
+        //if user's score is greater than or equal to 60 (and not greater than or equal to 70), user's grade is a D.
+      } else if (score >= 60) {
+        return "You passed with a D!";
+
+        //if user's score doesn't meet any of all the above conditions, user's grade is an F.
+      } else {
+        return "Oops! You scored an F.";
+      }
+    }
+
+    // Alert with a test score
+    window.onload = function() {
+      alert(assignedScore(90));
+    };
+
+  </script>
+</head>
+<body>
+    
+</body>
+</html>
